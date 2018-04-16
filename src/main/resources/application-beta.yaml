@@ -9,16 +9,12 @@ eureka:
   ##修改UI上的数据中心名称为BetaCenter
   datacenter: BetaCenter
   client:
-    ##禁用客户端注册行为,不向注册中心注册自己
-    ## register-with-eureka: false
-    ## 不去检索服务
-    fetch-registry: false
     service-url:
       ##默认区域控制UI地址
       defaultZone: http://${eureka.instance.hostname}:8000/eureka
   instance:
-    hostname: localhost
-    prefer-ip-address: true
+    hostname: eureka-service2
+
 
 
 

@@ -17,11 +17,9 @@ eureka:
     service-url:
       ##默认区域控制UI地址 注册到9000端口的Eureka服务中心上
       defaultZone: http://${eureka.instance.hostname}:9000/eureka/
-    availability-zones:
-        alpha: devZone
   instance:
-    hostname: localhost
-    prefer-ip-address: true
+    hostname: eureka-service1
+
 
 
 
