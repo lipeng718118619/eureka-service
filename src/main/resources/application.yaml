@@ -1,0 +1,10 @@
+spring:
+  profiles:
+    active: alpha
+logging:
+  config: classpath:logback-boot.xml
+  file: ${spring.application.name}
+eureka:
+  server:
+    ##关闭自我保护机制，确保注册中心可以将不可用的实例正确剔除
+    enable-self-preservation: false
